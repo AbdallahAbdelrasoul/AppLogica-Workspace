@@ -1,0 +1,210 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8CF596-B4C9-44C3-9404-8DF7C5B8CB0C}|ERB.Services.Workflows.Application\\ERB.Services.Workflows.Application.csproj|e:\\applogica\\applogica pocs\\camunda poc\\camundapoc\\erb.services.workflows\\erb.services.workflows.application\\workers\\waitapprovals\\waitapprovalsworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8CF596-B4C9-44C3-9404-8DF7C5B8CB0C}|ERB.Services.Workflows.Application\\ERB.Services.Workflows.Application.csproj|solutionrelative:erb.services.workflows.application\\workers\\waitapprovals\\waitapprovalsworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8CF596-B4C9-44C3-9404-8DF7C5B8CB0C}|ERB.Services.Workflows.Application\\ERB.Services.Workflows.Application.csproj|e:\\applogica\\applogica pocs\\camunda poc\\camundapoc\\erb.services.workflows\\erb.services.workflows.application\\workers\\sendannualleaverequest\\sendannualleaverequestworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8CF596-B4C9-44C3-9404-8DF7C5B8CB0C}|ERB.Services.Workflows.Application\\ERB.Services.Workflows.Application.csproj|solutionrelative:erb.services.workflows.application\\workers\\sendannualleaverequest\\sendannualleaverequestworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8CF596-B4C9-44C3-9404-8DF7C5B8CB0C}|ERB.Services.Workflows.Application\\ERB.Services.Workflows.Application.csproj|e:\\applogica\\applogica pocs\\camunda poc\\camundapoc\\erb.services.workflows\\erb.services.workflows.application\\workers\\sendannualleaverequest\\io\\sendannualleaverequestinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8CF596-B4C9-44C3-9404-8DF7C5B8CB0C}|ERB.Services.Workflows.Application\\ERB.Services.Workflows.Application.csproj|solutionrelative:erb.services.workflows.application\\workers\\sendannualleaverequest\\io\\sendannualleaverequestinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA60BEF4-7F06-4A32-A12B-D85946942C08}|ERB.Services.Workflows.Presentation\\ERB.Services.Workflows.Presentation.csproj|e:\\applogica\\applogica pocs\\camunda poc\\camundapoc\\erb.services.workflows\\erb.services.workflows.presentation\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AA60BEF4-7F06-4A32-A12B-D85946942C08}|ERB.Services.Workflows.Presentation\\ERB.Services.Workflows.Presentation.csproj|solutionrelative:erb.services.workflows.presentation\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8CF596-B4C9-44C3-9404-8DF7C5B8CB0C}|ERB.Services.Workflows.Application\\ERB.Services.Workflows.Application.csproj|e:\\applogica\\applogica pocs\\camunda poc\\camundapoc\\erb.services.workflows\\erb.services.workflows.application\\workers\\checkanuuals\\checkannualdaysworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8CF596-B4C9-44C3-9404-8DF7C5B8CB0C}|ERB.Services.Workflows.Application\\ERB.Services.Workflows.Application.csproj|solutionrelative:erb.services.workflows.application\\workers\\checkanuuals\\checkannualdaysworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA60BEF4-7F06-4A32-A12B-D85946942C08}|ERB.Services.Workflows.Presentation\\ERB.Services.Workflows.Presentation.csproj|e:\\applogica\\applogica pocs\\camunda poc\\camundapoc\\erb.services.workflows\\erb.services.workflows.presentation\\controllers\\camundacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA60BEF4-7F06-4A32-A12B-D85946942C08}|ERB.Services.Workflows.Presentation\\ERB.Services.Workflows.Presentation.csproj|solutionrelative:erb.services.workflows.presentation\\controllers\\camundacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8CF596-B4C9-44C3-9404-8DF7C5B8CB0C}|ERB.Services.Workflows.Application\\ERB.Services.Workflows.Application.csproj|e:\\applogica\\applogica pocs\\camunda poc\\camundapoc\\erb.services.workflows\\erb.services.workflows.application\\workers\\checkanuuals\\io\\checkannualoutput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8CF596-B4C9-44C3-9404-8DF7C5B8CB0C}|ERB.Services.Workflows.Application\\ERB.Services.Workflows.Application.csproj|solutionrelative:erb.services.workflows.application\\workers\\checkanuuals\\io\\checkannualoutput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8CF596-B4C9-44C3-9404-8DF7C5B8CB0C}|ERB.Services.Workflows.Application\\ERB.Services.Workflows.Application.csproj|e:\\applogica\\applogica pocs\\camunda poc\\camundapoc\\erb.services.workflows\\erb.services.workflows.application\\workers\\workersplaceholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8CF596-B4C9-44C3-9404-8DF7C5B8CB0C}|ERB.Services.Workflows.Application\\ERB.Services.Workflows.Application.csproj|solutionrelative:erb.services.workflows.application\\workers\\workersplaceholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA60BEF4-7F06-4A32-A12B-D85946942C08}|ERB.Services.Workflows.Presentation\\ERB.Services.Workflows.Presentation.csproj|e:\\applogica\\applogica pocs\\camunda poc\\camundapoc\\erb.services.workflows\\erb.services.workflows.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA60BEF4-7F06-4A32-A12B-D85946942C08}|ERB.Services.Workflows.Presentation\\ERB.Services.Workflows.Presentation.csproj|solutionrelative:erb.services.workflows.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\ERB.Services.Workflows.Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "ERB.Services.Workflows.Presentation\\Program.cs",
+              "ToolTip": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\ERB.Services.Workflows.Presentation\\Program.cs",
+              "RelativeToolTip": "ERB.Services.Workflows.Presentation\\Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAADgvxAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T11:20:52.722Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\ERB.Services.Workflows.Presentation\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ERB.Services.Workflows.Presentation\\appsettings.Development.json",
+              "ToolTip": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\ERB.Services.Workflows.Presentation\\appsettings.Development.json",
+              "RelativeToolTip": "ERB.Services.Workflows.Presentation\\appsettings.Development.json",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-25T16:43:29.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WaitApprovalsWorker.cs",
+              "DocumentMoniker": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\ERB.Services.Workflows.Application\\Workers\\WaitApprovals\\WaitApprovalsWorker.cs",
+              "RelativeDocumentMoniker": "ERB.Services.Workflows.Application\\Workers\\WaitApprovals\\WaitApprovalsWorker.cs",
+              "ToolTip": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\ERB.Services.Workflows.Application\\Workers\\WaitApprovals\\WaitApprovalsWorker.cs",
+              "RelativeToolTip": "ERB.Services.Workflows.Application\\Workers\\WaitApprovals\\WaitApprovalsWorker.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T16:34:01.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SendAnnualLeaveRequestInput.cs",
+              "DocumentMoniker": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\ERB.Services.Workflows.Application\\Workers\\SendAnnualLeaveRequest\\IO\\SendAnnualLeaveRequestInput.cs",
+              "RelativeDocumentMoniker": "ERB.Services.Workflows.Application\\Workers\\SendAnnualLeaveRequest\\IO\\SendAnnualLeaveRequestInput.cs",
+              "ToolTip": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\ERB.Services.Workflows.Application\\Workers\\SendAnnualLeaveRequest\\IO\\SendAnnualLeaveRequestInput.cs",
+              "RelativeToolTip": "ERB.Services.Workflows.Application\\Workers\\SendAnnualLeaveRequest\\IO\\SendAnnualLeaveRequestInput.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T16:24:39.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CheckAnnualDaysWorker.cs",
+              "DocumentMoniker": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\ERB.Services.Workflows.Application\\Workers\\CheckAnuuals\\CheckAnnualDaysWorker.cs",
+              "RelativeDocumentMoniker": "ERB.Services.Workflows.Application\\Workers\\CheckAnuuals\\CheckAnnualDaysWorker.cs",
+              "ToolTip": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\ERB.Services.Workflows.Application\\Workers\\CheckAnuuals\\CheckAnnualDaysWorker.cs",
+              "RelativeToolTip": "ERB.Services.Workflows.Application\\Workers\\CheckAnuuals\\CheckAnnualDaysWorker.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T16:24:24.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CheckAnnualOutput.cs",
+              "DocumentMoniker": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\ERB.Services.Workflows.Application\\Workers\\CheckAnuuals\\IO\\CheckAnnualOutput.cs",
+              "RelativeDocumentMoniker": "ERB.Services.Workflows.Application\\Workers\\CheckAnuuals\\IO\\CheckAnnualOutput.cs",
+              "ToolTip": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\ERB.Services.Workflows.Application\\Workers\\CheckAnuuals\\IO\\CheckAnnualOutput.cs",
+              "RelativeToolTip": "ERB.Services.Workflows.Application\\Workers\\CheckAnuuals\\IO\\CheckAnnualOutput.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T16:24:22.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CamundaController.cs",
+              "DocumentMoniker": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\ERB.Services.Workflows.Presentation\\Controllers\\CamundaController.cs",
+              "RelativeDocumentMoniker": "ERB.Services.Workflows.Presentation\\Controllers\\CamundaController.cs",
+              "ToolTip": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\ERB.Services.Workflows.Presentation\\Controllers\\CamundaController.cs",
+              "RelativeToolTip": "ERB.Services.Workflows.Presentation\\Controllers\\CamundaController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAMwBcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T16:23:19.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SendAnnualLeaveRequestWorker.cs",
+              "DocumentMoniker": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\ERB.Services.Workflows.Application\\Workers\\SendAnnualLeaveRequest\\SendAnnualLeaveRequestWorker.cs",
+              "RelativeDocumentMoniker": "ERB.Services.Workflows.Application\\Workers\\SendAnnualLeaveRequest\\SendAnnualLeaveRequestWorker.cs",
+              "ToolTip": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\ERB.Services.Workflows.Application\\Workers\\SendAnnualLeaveRequest\\SendAnnualLeaveRequestWorker.cs",
+              "RelativeToolTip": "ERB.Services.Workflows.Application\\Workers\\SendAnnualLeaveRequest\\SendAnnualLeaveRequestWorker.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T16:10:13.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WorkersPlaceHolder.cs",
+              "DocumentMoniker": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\ERB.Services.Workflows.Application\\Workers\\WorkersPlaceHolder.cs",
+              "RelativeDocumentMoniker": "ERB.Services.Workflows.Application\\Workers\\WorkersPlaceHolder.cs",
+              "ToolTip": "E:\\AppLogica\\AppLogica POCs\\Camunda POC\\CamundaPOC\\ERB.Services.Workflows\\ERB.Services.Workflows.Application\\Workers\\WorkersPlaceHolder.cs",
+              "RelativeToolTip": "ERB.Services.Workflows.Application\\Workers\\WorkersPlaceHolder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T16:09:24.084Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

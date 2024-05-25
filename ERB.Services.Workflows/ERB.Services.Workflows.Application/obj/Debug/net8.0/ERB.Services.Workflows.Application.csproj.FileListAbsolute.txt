@@ -1,0 +1,12 @@
+E:\AppLogica\AppLogica POCs\Camunda POC\CamundaPOC\ERB.Services.Workflows\ERB.Services.Workflows.Application\bin\Debug\net8.0\ERB.Services.Workflows.Application.deps.json
+E:\AppLogica\AppLogica POCs\Camunda POC\CamundaPOC\ERB.Services.Workflows\ERB.Services.Workflows.Application\bin\Debug\net8.0\ERB.Services.Workflows.Application.dll
+E:\AppLogica\AppLogica POCs\Camunda POC\CamundaPOC\ERB.Services.Workflows\ERB.Services.Workflows.Application\bin\Debug\net8.0\ERB.Services.Workflows.Application.pdb
+E:\AppLogica\AppLogica POCs\Camunda POC\CamundaPOC\ERB.Services.Workflows\ERB.Services.Workflows.Application\obj\Debug\net8.0\ERB.Services.Workflows.Application.csproj.AssemblyReference.cache
+E:\AppLogica\AppLogica POCs\Camunda POC\CamundaPOC\ERB.Services.Workflows\ERB.Services.Workflows.Application\obj\Debug\net8.0\ERB.Services.Workflows.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\AppLogica\AppLogica POCs\Camunda POC\CamundaPOC\ERB.Services.Workflows\ERB.Services.Workflows.Application\obj\Debug\net8.0\ERB.Services.Workflows.Application.AssemblyInfoInputs.cache
+E:\AppLogica\AppLogica POCs\Camunda POC\CamundaPOC\ERB.Services.Workflows\ERB.Services.Workflows.Application\obj\Debug\net8.0\ERB.Services.Workflows.Application.AssemblyInfo.cs
+E:\AppLogica\AppLogica POCs\Camunda POC\CamundaPOC\ERB.Services.Workflows\ERB.Services.Workflows.Application\obj\Debug\net8.0\ERB.Services.Workflows.Application.csproj.CoreCompileInputs.cache
+E:\AppLogica\AppLogica POCs\Camunda POC\CamundaPOC\ERB.Services.Workflows\ERB.Services.Workflows.Application\obj\Debug\net8.0\ERB.Services.Workflows.Application.dll
+E:\AppLogica\AppLogica POCs\Camunda POC\CamundaPOC\ERB.Services.Workflows\ERB.Services.Workflows.Application\obj\Debug\net8.0\refint\ERB.Services.Workflows.Application.dll
+E:\AppLogica\AppLogica POCs\Camunda POC\CamundaPOC\ERB.Services.Workflows\ERB.Services.Workflows.Application\obj\Debug\net8.0\ERB.Services.Workflows.Application.pdb
+E:\AppLogica\AppLogica POCs\Camunda POC\CamundaPOC\ERB.Services.Workflows\ERB.Services.Workflows.Application\obj\Debug\net8.0\ref\ERB.Services.Workflows.Application.dll

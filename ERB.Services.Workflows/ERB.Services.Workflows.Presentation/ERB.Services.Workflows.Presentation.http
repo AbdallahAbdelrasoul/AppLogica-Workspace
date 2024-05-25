@@ -1,0 +1,6 @@
+@ERB.Services.Workflows.Presentation_HostAddress = http://localhost:5130
+
+GET {{ERB.Services.Workflows.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
