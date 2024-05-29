@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\ERB.Services.Workflows.Presentation.props" />
-</Project>
