@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERB.Services.ElsaServer.API", "ERB.Services.ElsaServer.API.csproj", "{32948C1D-2410-4FE0-B53F-2465284D7D38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERB.Services.ElsaServer.API", "ERB.Services.ElsaServer.API\ERB.Services.ElsaServer.API.csproj", "{32948C1D-2410-4FE0-B53F-2465284D7D38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERB.Services.ElsaServer.Domain", "..\ERB.Services.ElsaServer.Domain\ERB.Services.ElsaServer.Domain.csproj", "{B0F480DC-AB46-44CE-A1AC-573AC5813118}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERB.Services.ElsaServer.Domain", "ERB.Services.ElsaServer.Domain\ERB.Services.ElsaServer.Domain.csproj", "{B0F480DC-AB46-44CE-A1AC-573AC5813118}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
