@@ -2,7 +2,7 @@
 using Elsa.Workflows;
 using Elsa.Workflows.Models;
 
-namespace ElsaServer
+namespace ERB.Services.ElsaServer.Domain.CustomActivities
 {
     public class MyCustomActivity : CodeActivity<string>
     {
@@ -13,17 +13,6 @@ namespace ElsaServer
             var name = UserName.Get(context);
             var message = $"Hello, {name}!";
             context.SetResult(message);
-        }
-    }
-
-    public class WaitForApproval : Activity
-    {
-        protected override void Execute(ActivityExecutionContext context)
-        {
-            // Create a bookmark. The created bookmark will be stored in the workflow state.
-            context.CreateBookmark();
-
-            // This activity does not complete until the event occurs.
         }
     }
 }

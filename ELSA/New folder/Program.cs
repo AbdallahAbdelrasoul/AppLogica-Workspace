@@ -60,11 +60,8 @@ builder.Services.AddHealthChecks();
 // Add Swagger
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
-    c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
-});
+builder.Services.AddSwaggerGen();
+
 // Build the web application.
 var app = builder.Build();
 
@@ -79,15 +76,10 @@ app.UseWorkflowsSignalRHubs(); // Optional SignalR integration. Elsa Studio uses
 
 // Use Swagger 
 app.UseHttpsRedirection();
-if (app.Environment.IsDevelopment())
-{
-    app.UseDeveloperExceptionPage();
-    app.UseSwagger(c =>
-    {
-        c.RouteTemplate = "/swagger/{documentName}/swagger.json";
-    });
-    app.UseSwaggerUI(c => c.SwaggerEndpoint("./v1/swagger.json", "API v1"));
-}
+app.UseDeveloperExceptionPage();
+app.UseSwagger();
+app.UseSwaggerUI();
+
 app.MapControllers();
 
 app.Run();
