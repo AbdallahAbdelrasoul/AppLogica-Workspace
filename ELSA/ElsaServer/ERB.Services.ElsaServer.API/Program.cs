@@ -1,11 +1,26 @@
 using Elsa.EntityFrameworkCore.Modules.Management;
 using Elsa.EntityFrameworkCore.Modules.Runtime;
 using Elsa.Extensions;
-using Elsa.Workflows.Activities;
+using ERB.Services.ElsaServer.API;
 using ERB.Services.ElsaServer.Domain;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add Swagger
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Elsa API", Version = "v1" });
+
+    // Register the custom operation filter
+    c.DocumentFilter<CustomDocumentFilter>();
+
+    // Custom schema ID strategy to avoid conflicts
+    c.CustomSchemaIds(type => type.FullName);
+});
+
 builder.Services.AddElsa(elsa =>
 {
     // Configure Management layer to use EF Core.
@@ -57,10 +72,7 @@ builder.Services.AddCors(cors => cors
 // Add Health Checks.
 builder.Services.AddHealthChecks();
 
-// Add Swagger
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
 
 // Build the web application.
 var app = builder.Build();
@@ -74,12 +86,17 @@ app.UseWorkflowsApi(); // Use Elsa API endpoints.
 app.UseWorkflows(); // Use Elsa middleware to handle HTTP requests mapped to HTTP Endpoint activities.
 app.UseWorkflowsSignalRHubs(); // Optional SignalR integration. Elsa Studio uses SignalR to receive real-time updates from the server. 
 
-// Use Swagger 
-app.UseHttpsRedirection();
-app.UseDeveloperExceptionPage();
-app.UseSwagger();
-app.UseSwaggerUI();
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+    app.UseSwagger();
+    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Elsa API v1"));
+}
 
+app.UseHttpsRedirection();
+app.UseRouting();
+app.UseAuthorization();
 app.MapControllers();
+
 
 app.Run();

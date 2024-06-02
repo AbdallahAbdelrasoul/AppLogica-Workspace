@@ -10,8 +10,10 @@ namespace ERB.Services.ElsaServer.Domain.CustomActivities
 
         protected override void Execute(ActivityExecutionContext context)
         {
-            var name = UserName.Get(context);
-            var message = $"Hello, {name}!";
+
+            //var name = UserName.Get(context);
+
+            var message = $"Hello, {"Abdallah"}!";
             context.SetResult(message);
         }
     }
