@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElsaStudioBlazorServer", "ElsaStudioBlazorServer.csproj", "{D048D34C-AC22-4859-82DE-2A249D86328B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERB.Services.ElsaStudio", "ERB.Services.ElsaStudio/ERB.Services.ElsaStudio.csproj", "{D048D34C-AC22-4859-82DE-2A249D86328B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ECC83338-9FF0-444A-A390-D3233B2F0AE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +20,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D048D34C-AC22-4859-82DE-2A249D86328B} = {ECC83338-9FF0-444A-A390-D3233B2F0AE9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8885078A-A80C-4783-A739-48CA763F8481}
