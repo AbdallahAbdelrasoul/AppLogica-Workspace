@@ -63,7 +63,7 @@ stages:
           command: 'restore'
           restoreSolution: '**/*.sln'
           feedsToUse: 'config'
-          nugetConfigPath: '$(System.DefaultWorkingDirectory)/ERB.Services.ElsaServer.Presentation/nuget.config'
+          nugetConfigPath: '$(System.DefaultWorkingDirectory)/ERB.Services.ElsaStudio.API/nuget.config'
           noCache: true
           disableParallelProcessing: true
 
@@ -83,7 +83,7 @@ stages:
       - task: Docker@2
         inputs:
           containerRegistry: 'ACR Connection'
-          repository: 'elsaserver'
+          repository: 'elsastudio'
           command: 'build'
           Dockerfile: '**/Dockerfile'
           buildContext: 
@@ -94,7 +94,7 @@ stages:
       - task: Docker@2
         inputs:
           containerRegistry: 'ACR Connection'
-          repository: 'elsaserver'
+          repository: 'elsastudio'
           command: 'push'
           tags: '$(Build.BuildNumber)'
         displayName: 'push docker image'
@@ -127,4 +127,4 @@ stages:
           NotificationType: 'ChatMessage'
           UseVariableForMessage: true
           AuthorName: 'Ahmed Tayel'
-          Text: 'New ElsaServer Service Docker image v $(Build.BuildNumber) has been published'
+          Text: 'New ElsaStudio Service Docker image v $(Build.BuildNumber) has been published'

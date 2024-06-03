@@ -1,0 +1,67 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: elsastudio-service-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: elsastudio-service-deployment
+      owner: applogica
+  template:
+    metadata:
+      labels:
+        app: elsastudio-service-deployment
+        owner: applogica
+    spec:
+      containers:
+      - name: elsastudio-service-container
+        image: applogicacr.azurecr.io/elsastudio:#{Build.BuildNumber}#
+        imagePullPolicy: Always
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 80
+          protocol: TCP
+      imagePullSecrets:
+      - name: tayel-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: elsastudio-service
+spec:
+  type: NodePort
+  selector:
+    app: elsastudio-service-deployment
+    owner: applogica
+  ports:
+  - port: 80
+    targetPort: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: elsastudio-ingress
+  labels:
+    name: elsastudio-service
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    nginx.ingress.kubernetes.io/enable-cors: "true"
+    nginx.ingress.kubernetes.io/cors-allow-methods: "PUT, GET, POST, OPTIONS, DELETE"
+    kubernetes.io/ingress.class: nginx
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: elsastudio.#{IPAddress}#.nip.io
+    http:
+      paths:
+      - path: /?(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: elsastudio-service
+            port:
+              number: 80
