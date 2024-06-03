@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERB.Services.ElsaServer.API", "ERB.Services.ElsaServer.API\ERB.Services.ElsaServer.API.csproj", "{32948C1D-2410-4FE0-B53F-2465284D7D38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERB.Services.ElsaServer.Domain", "ERB.Services.ElsaServer.Domain\ERB.Services.ElsaServer.Domain.csproj", "{B0F480DC-AB46-44CE-A1AC-573AC5813118}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERB.Services.ElsaServer.Domain", "ERB.Services.ElsaServer.Domain\ERB.Services.ElsaServer.Domain.csproj", "{B0F480DC-AB46-44CE-A1AC-573AC5813118}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{13667D99-D426-4551-A040-770ED3528AFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{32948C1D-2410-4FE0-B53F-2465284D7D38} = {13667D99-D426-4551-A040-770ED3528AFB}
+		{B0F480DC-AB46-44CE-A1AC-573AC5813118} = {13667D99-D426-4551-A040-770ED3528AFB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1D85A10B-DB3D-454D-B187-18963018BC8D}

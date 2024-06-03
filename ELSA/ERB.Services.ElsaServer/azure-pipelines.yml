@@ -1,0 +1,130 @@
+trigger:
+- main
+- azure-pipelines
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+   major: 1
+   minor: 11
+
+stages:
+# Versioning main branch builds
+- stage: 
+  displayName: Build_Main_Version_Number
+  condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
+  jobs:
+  - job: Build_Main_Version_Number
+    variables:
+       patch: $[counter(variables['minor'], 0)]
+    steps:
+      - bash: |
+           echo "##vso[build.updatebuildnumber]$(major).$(minor).$(patch)"
+        name: SetMainBuildName
+# Versioning feature branch and PR builds
+
+- stage:
+  displayName: Build_Branch_Version_Number
+  condition: ne(variables['Build.SourceBranch'], 'refs/heads/main')
+  jobs:
+  - job: Build_Branch_Version_Number
+    variables:
+       prpatch: $[counter(variables['system.pullrequest.pullrequestid'], 0)]
+       brpatch: $[counter(variables['build.sourcebranchname'], 0)]
+    steps:
+      - bash: |
+           echo "##vso[build.updatebuildnumber]$(major).$(minor)-PullRequest.$(prpatch)"
+        condition: eq(variables['Build.Reason'], 'PullRequest')
+        name: SetPRBuildName
+      - bash: |
+           echo "##vso[build.updatebuildnumber]$(major).$(minor)-$(Build.SourceBranchName).$(brpatch)"
+        condition: ne(variables['Build.Reason'], 'PullRequest')
+        name: SetBranchBuildName
+
+# Stage for building your application
+- stage: Build_Project
+  displayName: Build_Project
+  condition: or(variables['Build.SourceBranch'], 'refs/heads/main',variables['Build.SourceBranch'], 'refs/heads/azure-pipelines')
+  jobs:
+  - job: Build_Project_and_Docker_Image
+    steps:
+      - task: NuGetToolInstaller@1
+        inputs:
+          versionSpec: 
+          checkLatest: true
+
+      - task: NuGetAuthenticate@1
+        inputs:
+          forceReinstallCredentialProvider: true
+
+      - task: NuGetCommand@2
+        inputs:
+          command: 'restore'
+          restoreSolution: '**/*.sln'
+          feedsToUse: 'config'
+          nugetConfigPath: '$(System.DefaultWorkingDirectory)/ERB.Services.ElsaServer.Presentation/nuget.config'
+          noCache: true
+          disableParallelProcessing: true
+
+      - task: DotNetCoreCLI@2
+        inputs:
+          command: 'build'
+          workingDirectory: '$(System.DefaultWorkingDirectory)'
+          arguments: '--configuration $(buildConfiguration)'
+          projects: '**/*.csproj'
+        displayName: '.net Build'
+      
+      - task: DockerInstaller@0
+        inputs:
+          dockerVersion: '17.09.0-ce'
+        displayName: 'install docker cli'
+      
+      - task: Docker@2
+        inputs:
+          containerRegistry: 'ACR Connection'
+          repository: 'elsaserver'
+          command: 'build'
+          Dockerfile: '**/Dockerfile'
+          buildContext: 
+          tags: '$(Build.BuildNumber)'
+          arguments: '--build-arg NUGET_USERNAME=$(Release.RequestedForEmail) --build-arg NUGET_PASSWORD=$(VSS_NUGET_ACCESSTOKEN)'
+        displayName: 'build docker image'
+
+      - task: Docker@2
+        inputs:
+          containerRegistry: 'ACR Connection'
+          repository: 'elsaserver'
+          command: 'push'
+          tags: '$(Build.BuildNumber)'
+        displayName: 'push docker image'
+      
+      - task: ArchiveFiles@2
+        inputs:
+          rootFolderOrFile: '$(System.DefaultWorkingDirectory)/deployment.yml'
+          includeRootFolder: true
+          archiveType: 'zip'
+          archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildNumber).zip'
+          replaceExistingArchive: true
+          verbose: true
+
+      - task: PublishBuildArtifacts@1
+        inputs:
+          PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+          ArtifactName: 'drop'
+          publishLocation: 'Container'
+
+- stage: Notify
+  dependsOn: Build_Project
+  jobs:
+    - job: Slack_Notification
+      steps:
+      - task: SlackNotification@6
+        inputs:
+          SlackApiToken: '$(SlackToken)'
+          MessageAuthor: 'Azure DevOps'
+          Channel: '#backend-heros'
+          NotificationType: 'ChatMessage'
+          UseVariableForMessage: true
+          AuthorName: 'Ahmed Tayel'
+          Text: 'New ElsaServer Service Docker image v $(Build.BuildNumber) has been published'
