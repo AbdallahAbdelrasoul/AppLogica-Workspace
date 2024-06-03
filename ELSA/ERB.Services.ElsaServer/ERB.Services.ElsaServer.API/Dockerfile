@@ -8,6 +8,16 @@ EXPOSE 8081
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
+ARG NUGET_USERNAME
+ARG NUGET_PASSWORD
+
+ENV NUGET_PASSWORD=${NUGET_PASSWORD}
+
+#ENV NUGET_USERNAME=Amin
+#ENV NUGET_PASSWORD=7gxexhsq33od3gg4d3xnxwxza42q3btqtk6dn7xfl45qlwcfkdcq
+# Adds this source with basic authentication, other authentication types exist but I'm not sure if they are applicable here in Linux based container
+RUN dotnet nuget add source https://pkgs.dev.azure.com/AppLogica/_packaging/AppLogica/nuget/v3/index.json --name Applogica --username ${NUGET_USERNAME} --store-password-in-clear-text --password ${NUGET_PASSWORD}
+
 WORKDIR /src
 COPY ["ERB.Services.ElsaServer.API/nuget.config", "ERB.Services.ElsaServer.API/"]
 COPY ["ERB.Services.ElsaServer.API/ERB.Services.ElsaServer.API.csproj", "ERB.Services.ElsaServer.API/"]

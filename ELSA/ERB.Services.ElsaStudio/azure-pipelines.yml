@@ -63,7 +63,7 @@ stages:
           command: 'restore'
           restoreSolution: '**/*.sln'
           feedsToUse: 'config'
-          nugetConfigPath: '$(System.DefaultWorkingDirectory)/ERB.Services.ElsaServer.API/nuget.config'
+          nugetConfigPath: '$(System.DefaultWorkingDirectory)/ERB.Services.ElsaServer.Presentation/nuget.config'
           noCache: true
           disableParallelProcessing: true
 
